@@ -5,7 +5,7 @@ const getFileNames = parentFileName => {
     const results = []
     const files = fs.readdirSync(`./docs${parentFileName}`)
     files.forEach(val => {
-        if ('README.md'.includes(val)) {
+        if (['README.md', 'images'].includes(val)) {
             // results.push('')
         } else {
             results.push(parentFileName + val)
