@@ -12,8 +12,8 @@
     "author": "Churjan <churjan@163.com>",
     "license": "ISC",
     "devDependencies": {
-        "@vuepress/plugin-back-to-top": "^1.2.0",
+        "@vuepress/plugin-back-to-top": "^1.5.2",
         "gh-pages": "^2.1.1",
-        "vuepress": "^1.2.0"
+        "vuepress": "^1.5.2"
     }
 }
