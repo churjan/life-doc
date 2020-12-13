@@ -3,18 +3,14 @@ const fs = require('fs')
 // 获取该文件夹下的所有文件名
 const getFileNames = parentFileName => {
   const results = []
-  const files = fs.readdirSync(`./docs${parentFileName}`)
+  const files = fs.readdirSync(`./docs/${parentFileName}`)
   files.forEach(val => {
-    if (['README.md', 'images'].includes(val)) {
-      // results.push('')
-    } else {
+    if (val.endsWith('.md') && val !== 'README.md') {
       results.push(parentFileName + val)
     }
   })
-  console.log(results)
   return results
 }
-
 module.exports = {
   title: '邱健的个人文档',
   description: '生活备忘录',
